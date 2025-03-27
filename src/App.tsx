@@ -7,7 +7,6 @@ import { TaskForm } from './components/TaskForm';
 import { setFilter } from './store/taskSlice';
 import { TaskFilter } from './types/task';
 import { IconSun, IconMoon } from '@tabler/icons-react';
-import { toast } from 'react-toastify';
 import './App.css';
 
 function App() {
@@ -17,7 +16,6 @@ function App() {
 
   const handleFilterChange = (value: string) => {
     dispatch(setFilter(value as TaskFilter));
-    toast.info(`Filtered tasks: ${value}`);
   };
 
   return (
