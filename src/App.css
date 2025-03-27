@@ -1,0 +1,14 @@
+
+.content-container {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  padding-bottom: 200px;
+  transition: background-color 0.3s ease;
+}
+
+.mantine-Switch-root,
+.mantine-Button-root,
+.mantine-Modal-content {
+  transition: all 0.3s ease !important;
+}
